@@ -33,9 +33,9 @@ class Owner
   end
   
   def buy_cat(cat)
-    new cat(name)
-    assigns self as owner
-    adds to self.cats array
+    #new cat(name)
+    #assigns self as owner
+    #adds to self.cats array
     
   end
   
