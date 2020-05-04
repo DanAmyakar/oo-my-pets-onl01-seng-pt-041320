@@ -60,7 +60,7 @@ class Owner
   def sell_pets
     binding.pry
     @cats.clear
-    @dogs.clear
+    @dogs.delete
   end
   
   
