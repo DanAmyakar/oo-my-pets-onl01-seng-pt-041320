@@ -60,6 +60,7 @@ class Owner
   end
   
   def sell_pets
+    binding.pry
     # sells all pets
   end
   
