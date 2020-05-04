@@ -28,5 +28,9 @@ class Owner
     @@all.clear
   end
   
+  def cats
+    binding.pry
+    @cats
+  end
   
 end
