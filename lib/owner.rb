@@ -57,6 +57,11 @@ class Owner
     @cats.each{|cat| cat.mood = 'happy'}
   end
   
+  def list_pets
+    @cats.each {|cat| cat.name}
+    @dogs.each {|dog| dog.name}
+  end
+  
   def sell_pets
     @cats.each {|cat| cat.mood = 'nervous'}
     @cats = []
