@@ -38,23 +38,27 @@ class Owner
   end
   
   def buy_cat(pet_name, owner = self)
+    binding.pry
     new_cat = Cat.new(pet_name)
     #new_cat.owner = self
     @cats << new_cat
   end
   
   def buy_dog(pet_name, owner = self)
+    binding.pry
     new_dog = Dog.new(pet_name)
     #new_dog.owner = self
     @dogs << new_dog
   end
   
   def walk_dogs
+    binding.pry
     #makes all dogs mood happy
     @dogs.each{|mood| mood = happy}
   end
   
   def feed_cats
+    binding.pry
     # makes all cats mood happy
     @cats.each{|mood| mood = happy}
   end
