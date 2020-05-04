@@ -61,7 +61,8 @@ class Owner
   
   def sell_pets
     binding.pry
-    # sells all pets
+    @cats.clear
+    @dogs.clear
   end
   
   
