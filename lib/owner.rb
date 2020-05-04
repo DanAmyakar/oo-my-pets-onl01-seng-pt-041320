@@ -10,6 +10,7 @@ class Owner
     @species = 'human'
     @@all.push(self)
     @cats = []
+    @dogs = []
   end
   
   def say_species
@@ -29,10 +30,38 @@ class Owner
   end
   
   def cats
-    binding.pry
     @cats
   end
   
+  def dogs
+    @dogs
+  end
+  
+  def buy_cat(pet_name)
+    new_cat = Cat.new(pet_name)
+    new_cat.owner = self
+    @cats << new_cat
+  end
+  
+  def buy_dog(pet_name)
+    new_dog = Dog.new(pet_name)
+    new_dog.owner = self
+    @dogs << new_dog
+  end
+  
+  def walk_dogs
+    #makes all dogs mood happy
+    @dogs.each{|mood| mood = happy}
+  end
+  
+  def feed_cats
+    # makes all cats mood happy
+    @cats.each{|mood| mood = happy}
+  end
+  
+  def sell_pets
+    # sells all pets
+  end
   
   
 end
