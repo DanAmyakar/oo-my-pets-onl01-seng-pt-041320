@@ -33,9 +33,10 @@ class Owner
   end
   
   def buy_cat(cat)
-    Cat.all.select{|cat| cat == cat}
-    cat.owner = self
-    @cat << cat
+    new cat(name)
+    assigns self as owner
+    adds to self.cats array
+    
   end
   
   def dogs
