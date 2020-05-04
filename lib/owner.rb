@@ -59,7 +59,7 @@ class Owner
   
   def sell_pets
     binding.pry
-    @cats.clear
+    @cats = []
     @dogs = []
   end
   
