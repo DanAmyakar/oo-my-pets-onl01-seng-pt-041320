@@ -9,8 +9,6 @@ class Owner
     @name = name
     @species = 'human'
     @@all.push(self)
-    @cats = []
-    @dogs = []
   end
   
   def say_species
@@ -30,11 +28,11 @@ class Owner
   end
   
   def cats
-    @cats
+    Cat.all.select{|cat| cat.owner == self}
   end
   
   def dogs
-    @dogs
+    Dog.all.select{|dog| dog.owner == self}
   end
   
   def buy_cat(pet_name)
