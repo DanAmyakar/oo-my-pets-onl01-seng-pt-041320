@@ -32,12 +32,12 @@ class Owner
     @cats
   end
   
-  def buy_cat(cat)
+  def buy_cat(pet_name)
     #new cat(name)
     #assigns self as owner
     #adds to self.cats array
-    
-    
+    pet = Cat.new(pet_name)
+    pet.owner = self
   end
   
   def dogs
