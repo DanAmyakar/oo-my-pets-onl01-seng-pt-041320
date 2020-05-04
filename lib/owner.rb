@@ -9,6 +9,7 @@ class Owner
     @name = name
     @species = 'human'
     @@all.push(self)
+    
   end
   
   def say_species
