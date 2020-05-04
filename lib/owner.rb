@@ -28,25 +28,5 @@ class Owner
     @@all.clear
   end
   
-  def cats
-    @cats
-  end
-  
-  def buy_cat(pet_name)
-    #new cat(name)
-    #assigns self as owner
-    #adds to self.cats array
-    pet = Cat.new(pet_name)
-    pet.owner = self
-  end
-  
-  def dogs
-    @dogs
-  end
-  
-  def buy_dog(dog)
-    dog.owner = self
-    @dog << dog
-  end
   
 end
