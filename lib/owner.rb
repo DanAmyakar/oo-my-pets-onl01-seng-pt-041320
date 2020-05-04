@@ -54,13 +54,13 @@ class Owner
   def walk_dogs
     binding.pry
     #makes all dogs mood happy
-    @dogs.each{|mood| mood = happy}
+    @dogs.each{|dog| dog.mood = happy}
   end
   
   def feed_cats
     binding.pry
     # makes all cats mood happy
-    @cats.each{|mood| mood = happy}
+    @cats.each{|cat| cat.mood = happy}
   end
   
   def sell_pets
